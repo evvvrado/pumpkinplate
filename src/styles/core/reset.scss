@@ -1,0 +1,236 @@
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	color: inherit;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: $font-text;
+	scroll-behavior: smooth;
+	height: 100%;
+	box-sizing: border-box;
+	overscroll-behavior: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+	overflow: overlay;
+	@extend %scroll;
+
+	body {
+		* {
+			box-sizing: border-box;
+		}
+	}
+
+	// @include media("<md_phone") {
+	// 	font-size: 52%;
+	// }
+}
+
+body {
+	height: 100%;
+	overscroll-behavior: none;
+	width: 100%;
+
+	#app {
+		opacity: 0;
+		visibility: hidden;
+
+		width: 100%;
+		height: 100%;
+	}
+
+	@include media("<md_phone") {
+	}
+}
+
+::selection {
+	color: $selection-color;
+	background: $selection-background;
+}
+
+[disabled] {
+	pointer-events: none;
+	filter: grayscale(0);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	list-style: none;
+	outline: none;
+	text-decoration: none;
+
+	font-size: 1.6rem;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	// user-select: none;
+	outline: none;
+	-webkit-touch-callout: none;
+}
+
+a,
+button {
+	all: unset;
+	cursor: pointer;
+	color: inherit;
+	outline: none;
+	pointer-events: auto;
+	text-decoration: none;
+	background: none;
+	border: none;
+	border-radius: none;
+	color: inherit;
+	font: inherit;
+	outline: none;
+	pointer-events: auto;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul,
+ol {
+	margin: 0;
+}
+
+:focus {
+	outline: none;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
+input,
+textarea {
+	background: none;
+	border: none;
+	border-radius: none;
+	color: inherit;
+	font: inherit;
+	outline: none;
+	pointer-events: auto;
+}
+
+/*
+|--------------------------------------------------------------------------
+| GRID
+|--------------------------------------------------------------------------
+*/
+
+section,
+// footer,
+// header,
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	& > .wrapper {
+		max-width: calc($container-area + 30px);
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+}

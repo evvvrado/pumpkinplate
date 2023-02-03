@@ -1,0 +1,207 @@
+// ========= DEFINIÇÃO DE MIXINS ========= // @include
+
+@mixin flex($direction, $align, $justify, $gap: 0) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $direction;
+	gap: $gap;
+}
+
+@mixin limitText($height, $lines) {
+	height: $height;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+}
+
+@mixin margin-y($margin) {
+	margin-top: $margin;
+	margin-bottom: $margin;
+}
+
+@mixin margin-x($margin) {
+	margin-right: $margin;
+	margin-left: $margin;
+}
+
+@mixin padding-y($padding) {
+	padding-top: $padding;
+	padding-bottom: $padding;
+}
+
+@mixin padding-x($padding) {
+	padding-right: $padding;
+	padding-left: $padding;
+}
+
+@mixin watch($transform, $time, $delay: 0s) {
+	opacity: 0;
+	transform: $transform;
+
+	&:not([data-range="out"]) {
+		transition: opacity $time, transform $time;
+		transition-delay: $delay;
+		opacity: unset;
+		transform: unset;
+	}
+}
+
+// ========= DEFINIÇÃO DE PLACEHOLDERS ========= // @extend
+
+%cover {
+	overflow: hidden;
+	display: block;
+
+	& > img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+%center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%scroll {
+	&::-webkit-scrollbar {
+		width: var(--scroll-width);
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: var(--scroll-background);
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: var(--scroll-thumb);
+		border-radius: var(--scroll-thumb-radius);
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+		cursor: pointer;
+		background: var(--scroll-hover);
+	}
+}
+
+%webeditor {
+	html,
+	body,
+	div,
+	span,
+	applet,
+	object,
+	iframe,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	blockquote,
+	pre,
+	a,
+	abbr,
+	acronym,
+	address,
+	big,
+	cite,
+	code,
+	del,
+	dfn,
+	em,
+	img,
+	ins,
+	kbd,
+	q,
+	s,
+	samp,
+	small,
+	strike,
+	strong,
+	sub,
+	sup,
+	tt,
+	var,
+	b,
+	u,
+	i,
+	center,
+	dl,
+	dt,
+	dd,
+	ol,
+	ul,
+	li,
+	fieldset,
+	form,
+	label,
+	legend,
+	table,
+	caption,
+	tbody,
+	tfoot,
+	thead,
+	tr,
+	th,
+	td,
+	article,
+	aside,
+	canvas,
+	details,
+	embed,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	menu,
+	nav,
+	output,
+	ruby,
+	section,
+	summary,
+	time,
+	mark,
+	audio,
+	video {
+		all: revert;
+	}
+
+	span,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		margin-top: 12px !important;
+	}
+
+	a {
+		color: blue;
+	}
+
+	blockquote {
+	}
+}
+
+// ========= DEFINIÇÃO DE FUNCTIONS ========= // nome(valor)
+
+@function z($name) {
+	@if index($z-indexes, $name) {
+		@return (length($z-indexes) - index($z-indexes, $name)) + 1;
+	} @else {
+		@warn 'O z-index "#{$name}" não foi definido; Escolha um da seguinte lista: #{$z-indexes}';
+		@return null;
+	}
+}

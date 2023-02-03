@@ -1,0 +1,43 @@
+{
+	"name": "web",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@radix-ui/primitive": "^1.0.0",
+		"@svgr/webpack": "^6.5.1",
+		"@types/node": "18.11.9",
+		"@types/react": "18.0.25",
+		"@types/react-dom": "18.0.9",
+		"eslint": "8.28.0",
+		"eslint-config-next": "13.0.5",
+		"eslint-config-prettier": "^8.6.0",
+		"framer-motion": "^8.3.3",
+		"next": "13.0.5",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "4.9.3"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.4.2",
+		"commitizen": "^4.3.0",
+		"husky": "^8.0.3",
+		"sass": "^1.57.1"
+	},
+	"eslintConfig": {
+		"eslintConfig": {
+			"extends": "./.eslintrc.json"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
+}

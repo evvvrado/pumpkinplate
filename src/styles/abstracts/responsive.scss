@@ -1,0 +1,23 @@
+@import "../vendors/include-media";
+
+/**
+	@include media('<phone')
+
+	320px — 480px: Mobile devices
+	481px — 768px: iPads, Tablets
+	769px — 1024px: Small screens, laptops
+	1025px — 1200px: Desktops, large screens
+	1201px and more —  Extra large screens, TV
+
+	Another Sizes: 1400px, 1200px, 992px, 730px, 600px
+**/
+
+// @mixin responsive($screenWIDTH) {
+// 	@media (max-width: $screenWIDTH) {
+// 		@content;
+// 	}
+
+// 	/**
+
+//   **/
+// }

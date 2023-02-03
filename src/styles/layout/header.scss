@@ -1,0 +1,22 @@
+header {
+	z-index: z("header");
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: 0.3s;
+
+	&[data-position="hide"] {
+		top: -5rem;
+	}
+
+	&[data-position="reduced"] {
+		color: $color-cod-gray;
+		background: $color-gallery;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
