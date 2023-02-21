@@ -3,5 +3,5 @@ export default function Error() {
 		<>
 			<h2>Página não encontrada</h2>
 		</>
-	)
+	);
 }

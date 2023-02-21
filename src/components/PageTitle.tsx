@@ -1,7 +1,15 @@
 import Head from "next/head";
 import { definition } from "../constants/definition";
 
-export function PageTitle({ title, description }) {
+type PageTitleType = {
+	title: string;
+	description: string;
+};
+
+export function PageTitle({
+	title = definition.title,
+	description = definition.description,
+}: PageTitleType) {
 	return (
 		<Head>
 			<meta charSet="UTF-8" />
@@ -32,8 +40,14 @@ export function PageTitle({ title, description }) {
 			<meta name="twitter:image:alt" content="Representação visual" />
 
 			<meta name="theme-color" content={definition.theme} />
-			<meta name="msapplication-navbutton-color" content={definition.theme} />
-			<meta name="apple-mobile-web-app-status-bar-style" content={definition.theme} />
+			<meta
+				name="msapplication-navbutton-color"
+				content={definition.theme}
+			/>
+			<meta
+				name="apple-mobile-web-app-status-bar-style"
+				content={definition.theme}
+			/>
 
 			<meta name="mobile-web-app-capable" content="yes" />
 			<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -42,5 +56,5 @@ export function PageTitle({ title, description }) {
 			<title>{title}</title>
 			<meta name="description" content={description} />
 		</Head>
-	)
+	);
 }

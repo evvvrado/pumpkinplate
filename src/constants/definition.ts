@@ -13,4 +13,4 @@ export const definition = {
 	phone: "988090305",
 	whatsapp: "35988090305",
 	endereco: "Rua, Bairro - Cidade, UF",
-}
+};
