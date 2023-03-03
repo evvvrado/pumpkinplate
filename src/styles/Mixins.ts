@@ -22,7 +22,7 @@ export const flex = (
 	direction: string,
 	align: string,
 	justify: string,
-	gap: number | undefined = 0
+	gap?: string | "0"
 ) => `
 	display: flex;
 	align-items: ${align};
@@ -33,7 +33,7 @@ export const flex = (
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const z = (name: any) => {
-	const index = theme.z_indexes.findIndex(name) + 1;
+	const index = theme.z_indexes.findIndex((item) => item == name) + 1;
 	if (!index) return;
 	return index;
 };

@@ -16,6 +16,7 @@ Beware, this Next.js boilerplate repository is not for the faint of heart. With 
 -   [Prettier](https://prettier.io)
 -   [Husky](https://github.com/typicode/husky)
 -   [Commitlint](https://commitlint.js.org/#/)
+-   [GraphQL](https://graphql.org/)
 
 ## Instalation
 

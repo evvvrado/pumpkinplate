@@ -1,9 +1,9 @@
 import Head from "next/head";
-import { definition } from "../constants/definition";
+import { definition } from "../../constants/definition";
 
 type PageTitleType = {
 	title: string;
-	description: string;
+	description?: string;
 };
 
 export function PageTitle({

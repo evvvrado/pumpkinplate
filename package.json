@@ -20,15 +20,23 @@
 		"eslint-config-next": "13.0.5",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-prettier": "^4.2.1",
+		"framer-motion": "^10.0.1",
+		"graphql": "^16.6.0",
 		"gsap": "^3.11.4",
 		"next": "13.0.5",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"styled-components": "^5.3.6",
-		"typescript": "4.9.3"
+		"typescript": "4.9.3",
+		"urql": "^3.0.3"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^17.4.2",
+		"@graphql-codegen/cli": "^3.2.1",
+		"@graphql-codegen/import-types-preset": "^2.2.6",
+		"@graphql-codegen/typescript": "^3.0.1",
+		"@graphql-codegen/typescript-operations": "^3.0.1",
+		"@graphql-codegen/typescript-urql": "^3.7.3",
 		"@types/styled-components": "^5.1.26",
 		"commitizen": "^4.3.0",
 		"husky": "^8.0.3"

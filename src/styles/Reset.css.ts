@@ -111,7 +111,7 @@ export const GlobalStyle = createGlobalStyle`
 		overflow: overlay;
 		
 		&::-webkit-scrollbar {
-			width: var(scroll_width);
+			
 		}
 
 		/* Track */
@@ -235,7 +235,7 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
-	width: "100%";
-	max-width: ${theme.container_area};
+	max-width: calc(${theme.container_area} + 30px);
 	margin: "0 auto";
+	padding: 0 15px;
 `;

@@ -6,6 +6,7 @@ export const definition = {
 	keywords:
 		"Desenvolvedores, Web, Agências, Profissionais, Criativos, Front-end, Back-end, Websites",
 	title: "@evvvrado",
+	titleTemplate: "— evvvrado",
 	url: "www.hyp8.com.br",
 	theme: "#090919",
 
