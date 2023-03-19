@@ -1,247 +1,99 @@
-import styled, { createGlobalStyle } from "styled-components"
-import theme from "./Theme"
+const fontSizes = [14, 16, 18, 20, 24, 28, 35, 40],
+	fontWeights = [400, 600],
+	lineHeights = ["120%", "130%", "140%", "150%"];
 
-export const GlobalStyle = createGlobalStyle`
-	@media (prefers-reduced-motion: no-preference) {
-		:root {
-			scroll-behavior: smooth;
-		}
-	}
+const theme = {
+	// Functional Variables
+	z_indexes: ["splash", "modals", "menu", "header", "super", "content"],
 
-	html,
-	body,
-	div,
-	span,
-	applet,
-	object,
-	iframe,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	blockquote,
-	pre,
-	a,
-	abbr,
-	acronym,
-	address,
-	big,
-	cite,
-	code,
-	del,
-	dfn,
-	em,
-	img,
-	ins,
-	kbd,
-	q,
-	s,
-	samp,
-	small,
-	strike,
-	strong,
-	sub,
-	sup,
-	tt,
-	var,
-	b,
-	u,
-	i,
-	center,
-	dl,
-	dt,
-	dd,
-	ol,
-	ul,
-	li,
-	fieldset,
-	form,
-	label,
-	legend,
-	table,
-	caption,
-	tbody,
-	tfoot,
-	thead,
-	tr,
-	th,
-	td,
-	article,
-	aside,
-	canvas,
-	details,
-	embed,
-	figure,
-	figcaption,
-	footer,
-	header,
-	hgroup,
-	menu,
-	nav,
-	output,
-	ruby,
-	section,
-	summary,
-	time,
-	mark,
-	audio,
-	video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		color: inherit;
-		font: inherit;
-		vertical-align: baseline;
-	}
+	breakpoints: {
+		sm_phone: "380px",
+		md_phone: "412px",
+		phone: "600px",
+		lg_phone: "730px",
 
-	html {
-		font-size: 62.5%;
-		font-family: $font-text;
-		scroll-behavior: smooth;
-		height: 100%;
-		box-sizing: border-box;
-		overscroll-behavior: none;
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		width: 100%;
-		overflow: overlay;
-		
-		&::-webkit-scrollbar {
-			
-		}
+		sm_tablet: "800px",
+		md_tablet: "1150px",
+		tablet: "1280px",
 
-		/* Track */
-		&::-webkit-scrollbar-track {
-			background: ${theme.scrollbar.backgroundColor};
-		}
+		sm_desktop: "1366px",
+		md_desktop: "1440px",
+		desktop: "1920px",
+	},
 
-		/* Handle */
-		&::-webkit-scrollbar-thumb {
-			background: ${theme.scrollbar.thumbColor};
-			border-radius: ${theme.scrollbar.thumbRadius};
-		}
+	// Grid Variables
+	container_area: "1216px",
 
-		/* Handle on hover */
-		&::-webkit-scrollbar-thumb:hover {
-			cursor: pointer;
-			background: ${theme.scrollbar.hoverColor};
-		}
+	// Theme Variables
+	scrollbar: {
+		width: "",
+		backgroundColor: "",
+		thumbColor: "",
+		thumbRadius: "",
+		hoverColor: "",
+	},
 
-		body {
-			* {
-				box-sizing: border-box;
-			}
+	selection: {
+		color: "",
+		background: "",
+	},
 
-			&::-webkit-scrollbar{
-				display: none;
-			}
-		}
-	}
+	// Font Variables
+	fontFamilies: {
+		inter: '"Inter", sans-serif',
+	},
+	fontSizes,
+	fontWeights,
+	lineHeights,
+	letterSpacings: {
+		normal: "normal",
+	},
 
-	body {
-		height: 100%;
-		overscroll-behavior: none;
-		width: 100%;
-		font-family: ${theme.fontFamilies.nova};
-		
-	}
+	// Colors Variables
+	colors: {
+		primary: "#fff",
 
-	::selection {
-		color: ${theme.selection.color};
-		background: ${theme.selection.background};
-	}
+		neutral: {
+			bg: "#13141B",
+			one: "#1d242b",
+			two: "#313D49",
+			three: "#5A636D",
+			four: "#8C9197",
+			five: "#BCC2C8",
+			six: "#F3f4f7",
+		},
 
-	[disabled] {
-		pointer-events: none;
-		filter: grayscale(0);
-	}
+		background: {
+			light: "#F1F3F8",
+			dark: "#151B1E",
+		},
+	},
+	defaultColors: {
+		color_black: "#000",
+		color_white: "#fff",
+		color_blue: "#007bff",
+		color_indigo: "#6610f2",
+		color_purple: "#6f42c1",
+		color_pink: "#e83e8c",
+		color_red: "#dc3545",
+		color_orange: "#fd7e14",
+		color_yellow: "#ffc107",
+		color_green: "#28a745",
+		color_teal: "#20c997",
+		color_cyan: "#17a2b8",
+		color_grey: "#6c757d",
+		color_grey_dark: "#343a40",
+		color_success: "#28a745",
+		color_info: "#17a2b8",
+		color_warning: "#ffc107",
+		color_danger: "#dc3545",
+		color_light: "#f8f9fa",
+		color_dark: "#343a40",
+		color_muted: "#616161",
+		color_opacity_bg: "rgba(0, 0, 0, 0.74)",
+		color_gallery: "#eee",
+		color_cod_gray: "#1c1c1c",
+	},
+};
 
-	* {
-		margin: 0;
-		padding: 0;
-		border: none;
-		box-sizing: border-box;
-		list-style: none;
-		outline: none;
-		text-decoration: none;
-
-		font-size: 1.6rem;
-	}
-
-	*,
-	*:before,
-	*:after {
-		box-sizing: border-box;
-		outline: none;
-		-webkit-touch-callout: none;
-	}
-
-	a,
-	button {
-		all: unset;
-		cursor: pointer;
-		color: inherit;
-		outline: none;
-		pointer-events: auto;
-		text-decoration: none;
-		background: none;
-		border: none;
-		border-radius: none;
-		color: inherit;
-		font: inherit;
-		outline: none;
-		pointer-events: auto;
-	}
-
-	img {
-		max-width: 100%;
-		display: block;
-	}
-
-	ul,
-	ol {
-		margin: 0;
-	}
-
-	:focus {
-		outline: none;
-	}
-
-	::-moz-focus-inner {
-		border: 0;
-	}
-
-	input,
-	textarea {
-		background: none;
-		border: none;
-		border-radius: none;
-		color: inherit;
-		font: inherit;
-		outline: none;
-		pointer-events: auto;
-	}
-
-	textarea {
-		resize: none;
-	}
-
-	section{
-		width: 100%;
-		padding-right: 15px;
-		padding-left: 15px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-`
-
-export const Wrapper = styled.div`
-	max-width: calc(${theme.container_area} + 30px);
-	margin: 0 auto;
-	padding: 0 15px;
-`
+export default theme;
