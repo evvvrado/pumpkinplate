@@ -1,6 +1,7 @@
+import { NextPage } from "next";
 import { PageTitle } from "../components/layout/PageTitle";
 
-export default function Home() {
+const Home: NextPage = () => {
 	return (
 		<>
 			<PageTitle
@@ -10,4 +11,6 @@ export default function Home() {
 			<h2>@evvvrado</h2>
 		</>
 	);
-}
+};
+
+export default Home;

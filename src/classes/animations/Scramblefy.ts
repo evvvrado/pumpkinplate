@@ -43,8 +43,6 @@ export default class Scramblefy {
 
 	updateChars() {
 		if (this.frame < this.mainTextSize) {
-			// console.log(`frame: ${this.frame + 1}`);
-
 			if (this.frame <= this.mainTextSize - 2) {
 				for (let i = this.frame; i < this.mainTextSize; i++) {
 					this.draft[i] = this.randomChar();

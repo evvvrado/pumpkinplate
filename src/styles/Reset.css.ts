@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import theme from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
@@ -232,10 +232,4 @@ export const GlobalStyle = createGlobalStyle`
 		margin-left: auto;
 	}
 
-`;
-
-export const Wrapper = styled.div`
-	max-width: calc(${theme.container_area} + 30px);
-	margin: "0 auto";
-	padding: 0 15px;
 `;

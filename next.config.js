@@ -3,8 +3,15 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 
+	compress: true,
+	compiler: {
+		styledComponents: true,
+	},
+
 	images: {
-		// domains: ["media.graphassets.com"],
+		domains: ["media.graphassets.com"],
+		dangerouslyAllowSVG: true,
+		contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
 	},
 
 
