@@ -9,7 +9,11 @@ import { GlobalStyle } from "styles/Reset.css";
 import { Inter } from "next/font/google";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--inter",
+	weight: ["400", "500", "600", "700", "800"],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
 	// if (pageProps.urqlState) {
@@ -18,10 +22,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	return (
 		// <UrqlProvider value={client}>
-		<>
+		<main className={inter.variable}>
 			<GlobalStyle />
 			<Component {...pageProps} />
-		</>
+		</main>
 		//</UrqlProvider>
 	);
 }

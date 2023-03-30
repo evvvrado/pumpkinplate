@@ -225,11 +225,14 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	section{
-		width: 100%;
-		padding-right: 15px;
-		padding-left: 15px;
-		margin-right: auto;
-		margin-left: auto;
+		overflow: hidden;
+	}
+	
+
+	main{
+		*{
+			font-family: ${theme.fontFamilies.inter};
+		}
 	}
 
 `;
