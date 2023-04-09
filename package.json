@@ -1,0 +1,45 @@
+{
+	"name": "evvvrado_portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"author": "evvvrado",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.57.1",
+		"eslint": "^8.38.0",
+		"eslint-config-next": "^13.3.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"framer-motion": "^10.11.2",
+		"gsap": "^3.11.5",
+		"next": "^13.3.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"styled-components": "^5.3.9",
+		"typescript": "^5.0.4"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.4.4",
+		"@types/gsap": "^3.0.0",
+		"@types/react": "18.0.33",
+		"@types/styled-components": "^5.1.26",
+		"commitizen": "^4.3.0",
+		"husky": "^8.0.0"
+	},
+	"eslintConfig": {
+		"eslintConfig": {
+			"extends": "./.eslintrc.json"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
+}
