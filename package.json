@@ -1,8 +1,7 @@
 {
-	"name": "evvvrado_portfolio",
+	"name": "pumpkinplate_2023",
 	"version": "0.1.0",
 	"private": true,
-	"author": "evvvrado",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -11,6 +10,11 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@graphql-codegen/cli": "^3.3.0",
+		"@graphql-codegen/import-types-preset": "^2.2.6",
+		"@graphql-codegen/typescript": "^3.0.3",
+		"@graphql-codegen/typescript-operations": "^3.0.3",
+		"@graphql-codegen/typescript-urql": "^3.7.3",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"eslint": "^8.38.0",
 		"eslint-config-next": "^13.3.0",
@@ -22,7 +26,8 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"styled-components": "^5.3.9",
-		"typescript": "^5.0.4"
+		"typescript": "^5.0.4",
+		"urql": "^4.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^17.4.4",
