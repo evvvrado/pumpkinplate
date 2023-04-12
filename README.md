@@ -25,13 +25,13 @@ To install this project, follow these steps:
 1. Clone the repository to your local machine:
 
 ```
-    - git clone https://github.com/[your_username]/next-boilerplate.git
+    - git clone https://github.com/evvvrado/pumpkinplate.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-	- cd next-boilerplate
+	- cd pumpkinplate
 ```
 
 3. Install the dependencies:
