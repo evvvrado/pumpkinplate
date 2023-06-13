@@ -25,25 +25,25 @@ To install this project, follow these steps:
 1. Clone the repository to your local machine:
 
 ```
-    - git clone https://github.com/evvvrado/pumpkinplate.git
+- git clone https://github.com/evvvrado/pumpkinplate.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-	- cd pumpkinplate
+- cd pumpkinplate
 ```
 
 3. Install the dependencies:
 
 ```
-    - yarn install
+- yarn install
 ```
 
 4. Start the development server:
 
 ```
-	- yarn dev
+- yarn dev
 ```
 
 <br>

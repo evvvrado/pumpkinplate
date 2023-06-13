@@ -8,7 +8,8 @@
 		"start": "next start",
 		"lint": "next lint",
 		"test": "next lint",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"codegen": "yarn run graphql-codegen --w"
 	},
 	"dependencies": {
 		"@graphql-codegen/cli": "^3.3.0",

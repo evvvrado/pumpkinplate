@@ -1,7 +1,7 @@
-import { createGlobalStyle } from "styled-components";
-import theme from "./Theme";
+import { createGlobalStyle } from "styled-components"
+import theme from "./Theme"
 
-export const GlobalStyle = createGlobalStyle`a
+export const GlobalStyle = createGlobalStyle`
 	@media (prefers-reduced-motion: no-preference) {
 		:root {
 			scroll-behavior: smooth;
@@ -233,4 +233,4 @@ export const GlobalStyle = createGlobalStyle`a
 			font-family: ${theme.fontFamilies.inter};
 		}
 	}
-`;
+`
