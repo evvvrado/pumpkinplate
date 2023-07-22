@@ -17,6 +17,7 @@
 		"@graphql-codegen/typescript": "^3.0.3",
 		"@graphql-codegen/typescript-operations": "^3.0.3",
 		"@graphql-codegen/typescript-urql": "^3.7.3",
+		"@next/env": "^13.4.12",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"eslint": "^8.38.0",
 		"eslint-config-next": "^13.3.0",

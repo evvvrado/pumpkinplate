@@ -31,8 +31,9 @@ export const flex = (
 	gap: ${gap};
 `;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const z = (name: any) => {
+export const z = (
+	name: "splash" | "modals" | "menu" | "header" | "super" | "content"
+) => {
 	const index = theme.z_indexes.findIndex((item) => item == name) + 1;
 	if (!index) return;
 	return theme.z_indexes.length - index;

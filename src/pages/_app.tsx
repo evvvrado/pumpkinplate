@@ -13,6 +13,12 @@ const inter = Inter({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+	console.log(
+		"\n%cmade with ❤ by %c@evvvrado",
+		"text-style:none;  font-family: consolas; color:$white; background-color: #ff3434; padding: 5px; margin-top: 5px; margin-bottom: 15px;",
+		"text-style:none;  font-family: consolas; color:#fff; background-color: #ff3434; padding: 5px; margin-top: 5px; margin-bottom: 15px;"
+	);
+
 	return (
 		// <UrqlProvider value={client}>
 		<main className={inter.variable}>

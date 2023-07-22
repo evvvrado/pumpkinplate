@@ -1,7 +1,7 @@
-import { loadEnvConfig } from "@next/env"
-import { CodegenConfig } from "@graphql-codegen/cli"
+import { loadEnvConfig } from "@next/env";
+import { CodegenConfig } from "@graphql-codegen/cli";
 
-loadEnvConfig(process.cwd())
+loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
 	overwrite: true,
@@ -15,6 +15,6 @@ const config: CodegenConfig = {
 			},
 		},
 	},
-}
+};
 
-export default config
+export default config;

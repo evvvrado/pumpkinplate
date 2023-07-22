@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import theme from "./Theme"
+import { createGlobalStyle } from "styled-components";
+import theme from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 	@media (prefers-reduced-motion: no-preference) {
@@ -233,4 +233,4 @@ export const GlobalStyle = createGlobalStyle`
 			font-family: ${theme.fontFamilies.inter};
 		}
 	}
-`
+`;
