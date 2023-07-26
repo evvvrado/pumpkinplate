@@ -3724,6 +3724,11 @@ isomorphic-ws@5.0.0, isomorphic-ws@^5.0.0:
   resolved "https://registry.yarnpkg.com/isomorphic-ws/-/isomorphic-ws-5.0.0.tgz#e5529148912ecb9b451b46ed44d53dae1ce04bbf"
   integrity sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==
 
+jack-o-hook@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jack-o-hook/-/jack-o-hook-1.0.1.tgz#a6da7856e2b1fc2a891d5b26be5536e15b5196a9"
+  integrity sha512-jRtcOE/v1yVZ2MiuSj8+m28wVr5VtSwfShRM3c5oqzaUqpv5+5qmfqENU3rBXnp/AYuVCLLj1/yG44OcIi2hbQ==
+
 jiti@1.17.1:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.17.1.tgz#264daa43ee89a03e8be28c3d712ccc4eb9f1e8ed"
