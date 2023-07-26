@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { definition } from "constants/definition";
+import definition from "@/constants/definition";
 
 export function Seo({
 	title = definition.title,

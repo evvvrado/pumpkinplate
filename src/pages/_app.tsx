@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { GlobalStyle } from "styles/Reset.css";
+import { GlobalStyle } from "@/styles/Reset.css";
 
 // import { Provider as UrqlProvider } from "urql";
 // import { client, ssrCache } from "../providers/ureql";

@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "ES2021",
 		"lib": ["dom", "dom.iterable", "esnext", "ES2021"],
-		"baseUrl": "./src",
+		"baseUrl": ".",
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,

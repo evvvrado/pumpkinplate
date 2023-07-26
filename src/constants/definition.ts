@@ -1,4 +1,4 @@
-export const definition = {
+const definition = {
 	name: "evvvrado",
 	nickname: "evvvrado",
 
@@ -14,3 +14,5 @@ export const definition = {
 	whatsapp: "",
 	endereco: "",
 };
+
+export default definition;
