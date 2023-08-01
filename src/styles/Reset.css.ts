@@ -100,7 +100,7 @@ export const GlobalStyle = createGlobalStyle`
 
 	html {
 		font-size: 62.5%;
-		font-family: $font-text;
+		font-family: ${theme.fonts.primary};
 		scroll-behavior: smooth;
 		height: 100%;
 		box-sizing: border-box;
@@ -114,18 +114,15 @@ export const GlobalStyle = createGlobalStyle`
 			
 		}
 
-		/* Track */
 		&::-webkit-scrollbar-track {
 			background: ${theme.scrollbar.backgroundColor};
 		}
 
-		/* Handle */
 		&::-webkit-scrollbar-thumb {
 			background: ${theme.scrollbar.thumbColor};
 			border-radius: ${theme.scrollbar.thumbRadius};
 		}
 
-		/* Handle on hover */
 		&::-webkit-scrollbar-thumb:hover {
 			cursor: pointer;
 			background: ${theme.scrollbar.hoverColor};
@@ -228,9 +225,13 @@ export const GlobalStyle = createGlobalStyle`
 		overflow: hidden;
 	}
 
-	main{
-		*{
-			font-family: ${theme.fontFamilies.inter};
-		}
-	}
+
+	img {
+		image-rendering: optimizeSpeed;
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -webkit-optimize-contrast;
+		image-rendering: optimize-contrast;
+		image-rendering: pixelated;
+		-ms-interpolation-mode: nearest-neighbor;
+	 }
 `;

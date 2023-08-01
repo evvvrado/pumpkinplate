@@ -1,17 +1,25 @@
-import { loadEnvConfig } from "@next/env";
-import { CodegenConfig } from "@graphql-codegen/cli";
+import { loadEnvConfig } from '@next/env';
+import { CodegenConfig } from '@graphql-codegen/cli';
 
 loadEnvConfig(process.cwd());
 
 const config: CodegenConfig = {
 	overwrite: true,
 	schema: process.env.NEXT_PUBLIC_CMS,
-	documents: "./src/graphql/**/*.graphql",
+	documents: './src/graphql/**/*.graphql',
 	generates: {
-		"src/generated/graphql.tsx": {
-			plugins: ["typescript", "typescript-operations", "typescript-urql"],
+		'src/generated/graphql.tsx': {
+			plugins: ['typescript', 'typescript-operations', 'typescript-urql'],
 			config: {
-				withHookes: true,
+				skipTypename: true,
+				declarationKind: 'interface',
+				noNamespaces: true,
+				pureMagicComment: true,
+				exposeQueryKeys: true,
+				exposeFetcher: true,
+				fetcher: 'graphql-request',
+
+				withHooks: true,
 			},
 		},
 	},

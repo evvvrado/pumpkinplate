@@ -1,5 +1,4 @@
 const theme = {
-	// Functional Variables
 	z_indexes: ["splash", "modals", "menu", "header", "super", "content"],
 
 	breakpoints: {
@@ -17,10 +16,8 @@ const theme = {
 		desktop: "1920px",
 	},
 
-	// Grid Variables
 	container_area: "1216px",
 
-	// Theme Variables
 	scrollbar: {
 		width: "",
 		backgroundColor: "",
@@ -34,12 +31,11 @@ const theme = {
 		background: "",
 	},
 
-	// Font Variables
-	fontFamilies: {
-		inter: '"Inter", sans-serif',
+	fonts: {
+		inter: "var(--inter), sans-serif",
+		primary: "var(--inter), sans-serif",
 	},
 
-	// Colors Variables
 	colors: {
 		primary: "#fff",
 
@@ -53,12 +49,6 @@ const theme = {
 			six: "#F3f4f7",
 		},
 
-		background: {
-			light: "#F1F3F8",
-			dark: "#151B1E",
-		},
-	},
-	defaultColors: {
 		color_black: "#000",
 		color_white: "#fff",
 		color_blue: "#007bff",
