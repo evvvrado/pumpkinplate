@@ -8,15 +8,9 @@
 		"start": "next start",
 		"lint": "next lint",
 		"test": "next lint",
-		"prepare": "husky install",
-		"codegen": "yarn run graphql-codegen --w"
+		"prepare": "husky install"
 	},
 	"dependencies": {
-		"@graphql-codegen/cli": "^3.3.0",
-		"@graphql-codegen/import-types-preset": "^2.2.6",
-		"@graphql-codegen/typescript": "^3.0.3",
-		"@graphql-codegen/typescript-operations": "^3.0.3",
-		"@graphql-codegen/typescript-urql": "^3.7.3",
 		"@next/env": "^13.4.12",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"eslint": "^8.38.0",
@@ -30,18 +24,17 @@
 		"prettier": "^2.8.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"styled-components": "^5.3.9",
-		"typescript": "^5.0.4",
-		"urql": "^4.0.0"
+		"styled-components": "^6.0.7",
+		"typescript": "5.1.6"
 	},
 	"devDependencies": {
 		"@commitlint/config-conventional": "^17.4.4",
 		"@types/gsap": "^3.0.0",
-		"@types/node": "^20.4.5",
+		"@types/node": "^20.4.8",
 		"@types/react": "18.0.33",
 		"@types/styled-components": "^5.1.26",
 		"commitizen": "^4.3.0",
-		"husky": "^8.0.0"
+		"husky": "^8.0.3"
 	},
 	"eslintConfig": {
 		"eslintConfig": {

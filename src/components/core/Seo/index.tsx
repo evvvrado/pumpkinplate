@@ -1,10 +1,10 @@
 import Head from "next/head";
 import definition from "@/constants/definition";
 
-export function Seo({
+const Seo: React.FC<SeoType> = ({
 	title = definition.title,
 	description = definition.description,
-}: SeoType) {
+}) => {
 	return (
 		<Head>
 			<meta charSet="UTF-8" />
@@ -128,4 +128,6 @@ export function Seo({
 			<meta name="description" content={description} />
 		</Head>
 	);
-}
+};
+
+export default Seo;

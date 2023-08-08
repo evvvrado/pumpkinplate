@@ -1,4 +1,4 @@
-import { Seo } from "@/components/core/seo";
+import Seo from "@/components/core/seo";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
