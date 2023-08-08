@@ -7,21 +7,16 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"test": "next lint",
 		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@next/env": "^13.4.12",
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
-		"eslint": "^8.38.0",
 		"eslint-config-next": "^13.3.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-prettier": "^4.2.1",
 		"framer-motion": "^10.11.2",
 		"gsap": "^3.11.5",
 		"jack-o-hook": "^1.0.1",
 		"next": "^13.3.0",
-		"prettier": "^2.8.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"styled-components": "^6.0.7",
@@ -34,6 +29,10 @@
 		"@types/react": "18.0.33",
 		"@types/styled-components": "^5.1.26",
 		"commitizen": "^4.3.0",
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.8.7",
 		"husky": "^8.0.3"
 	},
 	"eslintConfig": {

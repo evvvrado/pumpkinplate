@@ -1,0 +1,17 @@
+# Ignore config folders
+.circleci
+.docker
+.github
+.husky
+.vscode
+
+# Ignore build and coverage
+.next
+coverage
+yarn.lock
+
+# Ignore package folder
+node_modules
+
+# Graphql Generated
+src/generated/
