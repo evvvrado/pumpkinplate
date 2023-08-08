@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import theme from "./Theme";
+import theme from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
 	@media (prefers-reduced-motion: no-preference) {
@@ -224,7 +224,6 @@ export const GlobalStyle = createGlobalStyle`
 	section{
 		overflow: hidden;
 	}
-
 
 	img {
 		image-rendering: optimizeSpeed;

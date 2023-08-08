@@ -1,5 +1,5 @@
+import { Seo } from "@/components/core/seo";
 import { NextPage } from "next";
-import { Seo } from "@/components/core/Seo";
 
 const Home: NextPage = () => {
 	return (

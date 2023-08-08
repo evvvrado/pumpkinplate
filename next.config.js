@@ -5,7 +5,6 @@ const nextConfig = {
 
 	pageExtensions: ["tsx"],
 
-
 	eslint: {
 		ignoreDuringBuilds: true,
 	},
