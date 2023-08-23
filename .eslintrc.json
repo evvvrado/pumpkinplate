@@ -19,15 +19,15 @@
 		"sourceType": "module",
 		"project": "./tsconfig.json"
 	},
-	"plugins": ["react", "@typescript-eslint"],
+	"plugins": ["react", "@typescript-eslint", "no-comments"],
 	"rules": {
 		"import/no-extraneous-dependencies": "off",
 		"import/no-unresolved": "error",
 		"react/react-in-jsx-scope": "off",
-		"prettier/prettier": [
+		"no-comments/disallowComments": [
 			"error",
 			{
-				"endOfLine": "auto"
+				"allow": ["TODO", "FIXME", "NOTE", "DEBUG"]
 			}
 		]
 	}

@@ -20,7 +20,7 @@ const theme = {
 	},
 
 	fonts: {
-		primary: "var(--inter), sans-serif",
+		primary: "var(--primary), sans-serif",
 	},
 
 	colors: {

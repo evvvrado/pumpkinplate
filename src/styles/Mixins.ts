@@ -34,11 +34,11 @@ export const flex = (
 	direction: string,
 	align: string,
 	justify: string,
-	gap?: string | "0px"
+	gap?: string,
 ) => css`
 	display: flex;
 	align-items: ${align};
 	justify-content: ${justify};
 	flex-direction: ${direction};
-	gap: ${gap};
+	gap: ${gap || "0px"};
 `;

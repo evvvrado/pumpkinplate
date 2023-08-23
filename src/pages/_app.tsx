@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 		<>
 			<style jsx global>{`
 				:root {
-					--inter: ${inter.style.fontFamily};
+					--primary: ${inter.style.fontFamily};
 				}
 			`}</style>
 
