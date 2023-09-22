@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="cover.png" width="1200">
+</p>
+
 ### 🎃 PUMPKINPLATE 2023
 
 > Happy Haunting!
